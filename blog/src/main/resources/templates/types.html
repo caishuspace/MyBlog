@@ -71,10 +71,10 @@
             <div class="ui bottom attached segment" >
                 <div class="ui middle aligned two column grid">
                     <div class="column">
-                        <div class="item"><a class="ui mini teal basic button" th:href="@{/(pageNum=${pageInfo.hasPreviousPage}?${pageInfo.prePage}:1)}">上一页</a></div>
+                        <div class="item"><a class="ui mini teal basic button" th:href="@{/(pagenum=${pageInfo.hasPreviousPage}?${pageInfo.prePage}:1)}">上一页</a></div>
                     </div>
                     <div class="right aligned column">
-                        <div class="item"><a class="ui mini teal basic button" th:href="@{/(pageNum=${pageInfo.hasNextPage}?${pageInfo.nextPage}:${pageInfo.pages})}">下一页</a></div>
+                        <div class="item"><a class="ui mini teal basic button" th:href="@{/(pagenum=${pageInfo.hasNextPage}?${pageInfo.nextPage}:${pageInfo.pages})}">下一页</a></div>
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@
             </div>
             <div class="ui inverted section divider"></div>
             <p class="m-text-thin m-text-spaced m-opacity-mini" >
-                <a href="http://www.beian.miit.gov.cn/">鲁ICP备20005308号-1</a>
+                <a href="http://beian.miit.gov.cn/">鲁ICP备20005308号-1</a>
             </p>
         </div>
     </footer>

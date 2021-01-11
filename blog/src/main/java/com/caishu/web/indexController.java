@@ -51,6 +51,7 @@ public class indexController {
         if(recommendBlog.size() > 10)
             recommendBlog = blogService.getPortRecommendBlog();
 
+
         //得到分页结果对象
         PageInfo pageInfo = new PageInfo(allBlog);
         model.addAttribute("pageInfo", pageInfo);
