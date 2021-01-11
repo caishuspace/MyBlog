@@ -34,7 +34,7 @@ public class BlogController {
         model.addAttribute("tags", tagService.getAllTag());
     }
 
-    @GetMapping("/blogs")           //Model是thymeleaf的内容，是前端的页面展示模型，并用来传值。这一段是分页处理。
+    @GetMapping("/blogs")           //Model是thymeleaf的内容，是前端的页面展示模型，并用来传值。这一段是分页处理。后台展示页面
     public String blogs(@RequestParam(required = false, defaultValue = "1", value = "pagenum")int pagenum, Model model){
         PageHelper.startPage(pagenum, 5);
         List<Blog> allBlog = blogService.getAllBlog();
